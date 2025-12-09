@@ -1,0 +1,333 @@
+<!-- Elizabeth Moniz | CS 463 Final Project | 9 December 2025 -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <!---------- SETTING UP HTML ---------->
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elizabeth's Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="final_website.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="final_website.js"></script>
+  </head>
+  <body>
+    <!---------- TITLE CARD ---------->
+    <div class="title-background">
+      <h1 class="title">The World of Elizabeth Moniz</h1>
+    </div>
+    <!---------- MAIN MENU ---------->
+    <nav class="navbar">
+      <ul>
+        <li> <a role="tab" aria-controls="home" onclick="showTab('home')">HOME</a></li>
+        <li> <a role="tab" aria-controls="about" onclick="showTab('about')">ABOUT</a></li>
+        <li> <a role="tab" aria-controls="previouswork" onclick="showTab('previouswork')">EXPERIENCE</a></li>
+        <li> <a role="tab" aria-controls="projects" onclick="showTab('projects')">PROJECTS</a></li>
+        <li> <a role="tab" aria-controls="contact" onclick="showTab('contact')">CONTACT ME</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="tab-page-borders">
+        <!---------- HOME PAGE TAB ---------->
+        <section id="home" class="tab" role="tabpanel">
+          <h2>~ Bringing Art to Life ~</h2>
+          <p>Welcome to my portfolio as an artist and computer scientist!</p>
+          <p>I studied computer science to pursue animation and visual arts software engineering. I have a strong 
+            passion for the arts and traditional animated styles, including but not limited to character design, 
+            motion and movement, and behavioral scoring.</p>
+          <h3>~</h3>
+          <p>I have a lot of experience with static art methods such as drawing and painting, but as I continue
+            my path as a computer science student, I am practicing my digital art skills to prepare for software
+            development and animation studio work.</p>
+          <h1 class="subtitle">Previews of my Digital Work</h1>
+          <div class="bootstrap-scope">
+            <div id="carousel-wrapper"></div>
+          </div>
+          <h3>~</h3>
+          <p>I enjoy working with digital art in my space time because of how advanced painting softwares 
+            have become. As someone pursuing animation, I find working with digital softwares can be transitional
+            from a solid background in studio arts.</p>
+          <p>I work often in the studio to create art by hand because I often find the body movement during
+            art creation is helpful in fulfilling the piece.</p>
+          <h1 class="subtitle">I welcome you to my art portfolio!</h1>
+          <p>Please explore my works in the menu tabs above to see a taste 
+            of my range and style. Feel free to contact me about past, current, or future works! I am always
+            open to an art discussion.</p>
+          </body>
+        </section>
+        <!---------- ABOUT ME TAB ---------->
+        <section id="about" class="tab" role="tabpanel" style="display:none;">
+          <h2>About Me!</h2>
+          <img src="media/profile_picture.JPG" alt="Photo of myself, Elizabeth Moniz, circa 2025" class="profile">
+          <p>My name is Elizabeth Moniz. I was born and raised in Southern California and have spent several
+            years living in Arizona and Oregon. I study Computer Science and Studio Art as a double major to
+            pursue a career in animation. I am also working toward a minor in Mathematics along the way. </p>
+          <h1 class="subtitle">Professional Experience</h1>
+          <!-- brief experience table -->
+          <table class="experience-table">
+            <tr>
+              <th>Positions</th>
+              <th>Company</th>
+              <th>Films Worked On</th>
+            </tr>
+            <tr>
+              <td>Assistant Animator</td>
+              <td>LAIKA Studios, Deep Sky</td>
+              <td>Miscellaneous projects & short films</td>
+            </tr>
+            <tr>
+              <td>Lead Animator</td>
+              <td>Disney</td>
+              <td>Zootopia, CoCo, Tangled: Before Ever After</td>
+            </tr>
+            <tr>
+              <td>Software Engineering</td>
+              <td>Sony Pictures</td>
+              <td>Spider-man: Into The Spider-Verse</td>
+            </tr>
+          </table>
+          <h1 class="subtitle">Personal Life</h1>
+          <!-- about me, personal & interests -->
+          <h3>~ Journey through College ~</h3>
+          <p>Right out of high school, I attended the University of Arizona for about 3 years in what I thought
+            was the path toward a computer engineering degree. I later discovered I had been put onto Electrical
+            Engineering by mistake, and I fled Tucson about a year after COVID's first lockdown.</p>
+          <p>Coming to Portland meant starting over, in some ways, and picking up where I left off in others.</p>
+          <p>I moved in with my best friend and attended Portland State University for a couple years before 
+            deciding to finish my lower division credits at Portland Community College. I finished my requirements,
+            took a small detour to Berlin, Germany with the art department's travel abroad program, and have
+            returned to PSU to complete my long journey for my Bachelor's degree in Science and/or Fine Arts. </p>
+            <h3>~ Personal Interests ~</h3>
+            <p>Drawing and painting are some of my favorite pasttimes, whether it be for a quick home DIY project 
+            or a small sketch on the river. My roommate once brought me home a large sheet of plywood years ago, and 
+            to this day I spend time painting on it and over it with new creative or seasonal concepts. </p>
+            <p>I enjoy thrifting with my friends, spending time in the city, and dancing to latin and pop music. 
+            When I get the chance, I love to be able to binge read inside; I can't deny I am a bit of a homebody.
+            Although, I do enjoy speaking to new people about film, pop culture, and their hottest take.</p>
+          </p>
+          </section>
+        <!---------- PREVIOUS WORK TAB ---------->
+        <section id="previouswork" class="tab" role="tabpanel" style="display:none;">
+          <h2>Previous Work & Experience</h2>
+          <h4>SKILLS & STRENGTHS</h4>
+          <div class="skills-box">
+            <div class="skills">
+              <h4>- In Computer Science -</h4>
+              <ul>
+                <li>Average Typing Speed up to 100 wpm</li>
+                <li>Experience with Data Entry</li>
+                <li>Experience with Technical Support</li>
+                <li>Ability to Learn New Software quickly</li>
+                <li>Discretion with Confidential Information</li>
+                <li><b>LANGUAGES</b></li>
+                <li>Fluent in C/C++/Python</li>
+                <li>Experience with HTML/CSS/Java/JavaScript</li>
+                <li><b>PROGRAMS</b></li>
+                <li>Highly Proficient in all Microsoft & Google Programs (Excel/Sheets, Word/Docs, Outlook/Gmail, Publisher, Powerpoint/Slides, Forms, etc.)</li>
+                <li>Proficient with Linux Terminal</li>
+                <li>Proficient in Archtics Ticketing System</li>
+                <li>Experience with all Adobe Software</li>
+              <ul>
+            </div>
+            <div class="skills">
+              <h4>- In Studio & Fine Arts -</h4>
+              <ul>
+                <li>Sketching, Drawing, Life Drawing, Painting, Digital, Scratchboard, Photography, Videography</li>
+                <li><b>MEDIUMS</b></li>
+                <li>Proficient with Charcoal, Graphite, Pastels, Colored Pencils</li>
+                <li>Proficient with Ink, Acrylic Paint, Watercolor, Oil Paint</li>
+                <li><b>DIGITAL WORK</b></li>
+                <li>Proficient in Adobe Photoshop, Illustrator, Lightroom, Krita Drawing & Krita Animation</li>
+                <li>Experience with Adobe Premiere Pro & Adobe Animate</li>
+                <li><b>PHOTOGRAPHY</b></li>
+                <li>Canon Powershot DSLR, Nikon Digital Coolpix, Disposable Film</li>
+                <li><b>MISC. STYLES</b></li>
+                <li>Interior painting, Window painting, Crochet, Emroidery, Machine Sewing</li>
+               </ul>
+            </div>
+          </div>
+          <h4>CAREERS</h4>       
+          <table class="works-table">
+            <tr>
+              <th>Role</th>
+              <th>Company</th>
+              <th>Years</th>
+              <th>Films Worked On</th>
+            </tr>
+            <tr>
+              <td>Software Developer</td>
+              <td>Bent Image Lab</td>
+              <td>2008-2009</td>
+              <td>Miscellaneous projects, IT Work</td>
+            </tr> 
+            <tr>
+              <td>Assistant Animator</td>
+              <td>Deep Sky</td>
+              <td>2008-2012</td>
+              <td>Miscellaneous projects & short films</td>
+            </tr>
+             <td>Assistant Animator</td>
+              <td>LAIKA Studios</td>
+              <td>2010-2013</td>
+              <td>Miscellaneous projects & short films, Voice Acting</td>
+            <tr>
+              <td>Lead Animator</td>
+              <td>Disney</td>
+              <td>2013-2016</td>
+              <td>Zootopia, CoCo, Tangled: Before Ever After</td>
+            </tr>
+            <tr>
+              <td>Software Engineering</td>
+              <td>Sony Pictures</td>
+              <td>2015-2018</td>
+              <td>Spider-man: Into The Spider-Verse</td>
+            </tr>
+          </table>
+          <h4>EDUCATION</h4>
+          <table class="works-table">
+            <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+              <th>Attended</th>
+              <th>Highlights</th>
+            </tr>
+            <tr>
+              <td>High School Diploma</td>
+              <td>Great Oak High School</td>
+              <td>2000-2004</td>
+              <td>Passed 9 AP Classes & Exams in Math, Science, English, and Art Practice & History</td>
+            </tr> 
+            <tr>
+              <td>Pursuing Undergraduate Degree</td>
+              <td>University of Arizona</td>
+              <td>2004-2006</td>
+              <td>Took 3 years of credits toward Bachelor's in Science and Fine Arts</td>
+            </tr>
+             <td>Bachelor's Degree in Science/Fine Arts</td>
+              <td>Portland State Univerity</td>
+              <td>2006-2008</td>
+              <td>Earned my Undergraduate Degree & began internships at studios</td>
+          </table>
+
+          </section>
+        <!---------- PROJECTS TAB ---------->
+        <section id="projects" class="tab" role="tabpanel" style="display:none;">
+          <h2>~ Gallery ~</h2>
+          <h3>Untitled Series - est. 2020</h3>
+          <div class="gallery-box">
+            <img src="media/painting-series-1.JPG" alt="photo 1 of 3, a dark painting of a girl sitting on a bus seat" class="gallery-series">
+            <img src="media/painting-series-2.JPG" alt="photo 2 of 3, a dark painting of a girl sitting on the floor reaching for items in a refrigerator" class="gallery-series">
+            <img src="media/painting-series-3.JPG" alt="photo 3 of 3, a dark painting of a girl laying and falling off a couch with a ukulele" class="gallery-series">
+          </div>
+          <div class="caption">Acrylic Paint on Canvas | Each 12" X 12"</div>
+          <div class="description">
+            Created during COVID, this series of paintings was made to depict the loneliness and looming despair of life during the pandemic.
+          </div>
+
+          <h3>Untitled Ink Collage - est. 2023</h3>
+          <div class="gallery-box">
+            <img src="media/ink-collage.png" alt="black and white ink drawing collage with coffee and city elements" class="gallery-fit">
+          </div>
+          <div class="caption">Black Ink on Drawing Paper | 16" X 20"</div>
+          <div class="description">
+            This was an earlier work done to play with values in ink and ink washes. I used elements of a coffee shop and citylife to create a 
+            range of values and dimensions.</div>
+          
+          <h3>Light Studies - est. 2021</h3>
+          <div class="gallery-box">
+            <img src="media/sketch-1.jpg" alt="photo 1 of 4, high contast charcoal study of a face in dramatic lighting" class="gallery-series">
+            <img src="media/sketch-2.jpg" alt="photo 2 of 4, high contast charcoal study of a face in dramatic lighting" class="gallery-series">
+            <img src="media/sketch-3.jpg" alt="photo 3 of 4, high contast charcoal study of a face in dramatic lighting" class="gallery-series">
+            <img src="media/sketch-4.jpg" alt="photo 4 of 4, high contast charcoal study of a face in dramatic lighting" class="gallery-series">
+          </div>
+          <div class="caption">Charcoal on Drawing Paper | Each 9" X 12"</div>
+          <div class="description">
+            These were sketches done for a life drawing class I took where we wanted to honor shapes and contours in the face.
+            The expressions and features of the faces are carved with value rather than drawn using rendered facial elements.
+          </div>
+          
+          <h3>Typography Project: Redesigning the Alphabet - est. 2021</h3>
+          <div class="gallery-box">
+            <img src="media/a afterglow.png" alt="the letter A, digitally designed" class="gallery-series">
+            <img src="media/b begin again.png" alt="the letter B, digitally designed" class="gallery-series">
+            <img src="media/c cold as you.png" alt="the letter C, digitally designed" class="gallery-series">
+          </div>
+          <div class="caption">Digital Art made with Krita & Photoshop | Each 3000 X 3000 px & 350 dpi</div>
+          <a href="https://drive.google.com/drive/folders/1DWlqzB_OsJbmcznAQyyLIsBDb2pmcAEf?usp=drive_link" target="_blank">View Full Archive</a> <p></p>
+          <div class="description">
+            As part of a typography class I took in Tucson, I restyled the alphabet using a through-line theme: Taylor Swift songs. Each letter was stylized
+            after a song that has a matching title initial.</div>
+          <div class="subtitle">Digital Works Featured on the Home Page</div>
+          
+          <h3>Here in the Afterglow - est. 2021</h3>
+          <div class="gallery-box">
+            <img src="media/here in the afterglow.png" alt="digital painting of a truck hauling flowers driving down a colorful city road" class="gallery-fit">
+          </div>
+          <div class="caption">Digital Art made with Krita | 2800 X 4100 px & 350 dpi</div>
+          <div class="description">
+            The inspiration for this piece came from a short romantic novel written about two male lovers set in 1970s San Francisco. The 
+            title was inspired by the Taylor Swift song from the album <i>Lover</i>, which helped set the color scheme of the work.
+          </div>
+
+          <h3>Concrete Company - est. 2022</h3>
+          <div class="gallery-box">
+            <img src="media/concrete company.png" alt="digital painting in shades of brown of a town square with buildings and a person's silhouette" class="gallery-fit">
+          </div>
+          <div class="caption">Digital Art made with Krita | 6000 X 7500 px & 500 dpi</div>
+          <div class="description">
+            This work was developed as a passion project to understand how to create ambiance and layered backgrounds with digital media.
+            The somewhat monochromatic palette was a personal challenge to avoid using colors to texturize the piece or to indicate where objects are in space.
+          </div>
+
+          <h3>Memories Re-Draw - est. 2022</h3>
+          <div class="gallery-box">
+            <img src="media/memories.png" alt="digital painting of a lamp post at night illuminating a rose with falling petals" class="gallery-fit">
+          </div>
+          <div class="caption">Digital Art made with Krita | 2800 X 3550 px & 350 dpi</div>
+          <div class="description">
+            The prompt for this piece was to re-create a book cover, and my inspiration was Lang Leav's incredible poetry novel <i>Memories</i>.
+            I connected to her poetry early on and have developed a personal collection of her work. I often use my copies as sketch books and use her poems as 
+            drawing prompts.
+          </div>
+        </section>
+        <!---------- CONTACT ME TAB ---------->
+        <section id="contact" class="tab" role="tabpanel" style="display:none;">
+            <h2>Contact Me</h2>
+            <p>If you have any questions, inquiries, requests, or comments, please leave your information below. If you have any recommendations, 
+              please include a link to the artist's work as well! I am always open to new inspo.</p>
+            <p>I am not currently taking commissions but am open to discussion, depending on the project.</p>
+            <!-- contact form section -->
+            <div class="border">
+              <div class="box">
+                <form>
+                  <label>Name:</label>
+                  <input type="name" id="name" required>
+                  <p></p>
+
+                  <label>Email:</label>
+                  <input type="email" id="email" required>
+                  <p></p>
+
+                  <label>Phone Number (optional):</label>
+                  <input type="phone" id="phone">
+                  <p></p>
+
+                  <label>Message:</label>
+                  <textarea id="message" required></textarea>
+                  <p></p>
+
+                  <button type="submit">Send</button>
+                  <p></p>
+
+                  <p id="success" style="color: var(--plum); display: none;">Message sent. Thanks so much for reaching out!</p>        
+                </form>
+              </box>
+            </div>
+          </div>
+          <h1 class="subtitle">I look forward to hearing from you!</h1>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

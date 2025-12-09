@@ -1,0 +1,426 @@
+/* Elizabeth Moniz | CS 463 Final Project | 9 December 2025 */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ------------------------------  website color palette ------------------------------ */
+:root {
+  /* neutrals */
+  --white: #F1E8E4;
+  --brown: #31231E;
+  --black: #231F20;
+
+  --plum: #482728;
+  --light-plum: #7E4E60;
+
+  /* main set */
+  --gold: #ffdf00;
+  --yellow: #fff090;
+  --light-yellow: #f4efd1;
+  --light-purple: #e9d3ed;
+  --purple: #cfa8d6;
+  --dark-purple: #4A306D;
+
+  /* side set 1 */
+  --green: #58641D;
+  --light-green: #7B904B;
+  --lightest-green: #e3e7d0;
+
+  /* side set 2 */
+  --pink: #AA4465;
+  --peach: #CE8D66;
+}
+
+/* ------------------------------ TEXT STYLES ------------------------------ */
+/* HEADERS & TITLE PAGE */
+h1 {
+  text-align: center;
+  overflow-wrap: break-word;
+  color: var(--white);
+}
+
+h2 {
+  font-size: 2.4em;
+  font-style: italic;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-variant-caps: small-caps;
+  font-style: italic;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-variant-caps: small-caps;
+  font-weight: bold;
+}
+
+
+body {
+  font-family: 'Georgia', serif;
+  font-size: 1.3em;
+  color: var(--brown);
+  background-color: var(--purple);
+  overflow-wrap: break-word;
+}
+
+/* general style */
+p {
+  line-height: 1.7;
+  font-weight: 200;
+}
+
+/* formats used mostly in the projects tab */
+.caption {
+  font-size: 1em;
+  font-variant-caps: small-caps;
+  margin-bottom: 1.5em;
+}
+
+.description {
+  padding: 0em 5em;
+  font-size: 1em;
+  font-weight: lighter;
+  margin-bottom: 5em;
+}
+
+/* title card & various subtitles for font matching */
+.title {
+  font-family: 'Tangerine';
+  font-size: 6em;
+  font-weight: bold;
+  overflow-wrap: break-word;
+  text-shadow:
+     2px 3px 1.5px var(--dark-purple),
+    -2px -2px 2px var(--purple);
+}
+
+.subtitle {
+  color: var(--brown);
+  font-family: 'Tangerine';
+  font-size: 2.7em;
+  font-weight: bold;
+  overflow-wrap: break-word;
+  /*text-shadow:
+     2px 3px 1.5px var(--dark-purple),
+    -2px -2px 2px var(--purple);
+    */
+}
+
+/* ------------------------------ PAGE FORMAT STYLES ------------------------------ */
+/* FRONT PAGE / MAIN MENU */
+.title-background {
+  background-image: url("media/background.jpg");
+  background-size: contain;
+  padding: 5px;
+  border-radius: 5px;
+  max-height: 638px;
+}
+
+/* small block to view the title text better */
+/* didnt end up using this hehe
+.title-box {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: var(--yellow);  
+  padding: 35px;
+  border-radius: 8px;
+}
+  */
+
+/* tab pages border box */
+.tab-page-borders {
+  width: 100%;
+  max-width: 1500px;
+  /*background-color: var(--light-green);*/
+  background-image: url("media/purple-swirls.png");
+  height: auto;
+  justify-self: center;
+  text-align: center;
+}
+
+/* tab pages */
+.tab {
+  width: 100%;
+  max-width: 1300px;
+  justify-self: center;
+  text-align: center;
+  padding: 1.5em 6em;
+  background-color: var(--white);
+  color: var(--brown);
+}
+
+/* ------------------------------ MAIN MENU STYLING ------------------------------ */
+.navbar {
+  padding: 0.05em 0.05em;
+}
+
+/* flex boxes managing the menu options*/
+.flex-item {
+  padding: 0.5em 1.2em;
+  background-color: var(--yellow);
+  color: var(--black);
+  font-size: 2.4em;
+  text-align: center;
+  overflow-wrap: break-word;
+  width: auto;
+  height: auto;
+  /*line-height: 1.3em;*/
+}
+
+/* navbar container */
+.navbar ul {
+  padding: 0.1em 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2em;
+  list-style: none;
+}
+
+/* clickable menu */
+.navbar a {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1em 2em;
+  /*background-color: var(--dark-purple);*/
+  background-color:#b280ba;
+  border-radius: 50px;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+/*  hover feature */
+.navbar a:hover {
+  color: var(--yellow);
+  background-color: var(--dark-purple);
+}
+
+/* ------------------------------ USED IN THE HOME PAGE SECTION ------------------------------ */
+/* BOOTSTRAP ELEMENTS: image carousel for a taste of the works*/
+
+/* protects my HTML from being affected */
+.bootstrap-scope * {
+  all: revert;
+}
+
+/* styles for the carousel */
+.bootstrap-scope .carousel,
+.bootstrap-scope .carousel * {
+  all: unset;
+}
+
+/* ------------------------------ USED IN THE ABOUT ME SECTION ------------------------------ */
+/* profile photo scaling */
+.profile {
+  width: 300px;
+  max-height: 1500px;
+  display: inline;
+  margin: 1em;
+  border: 7px dotted var(--light-plum);
+  border-radius: 50%;
+}
+
+/* table to display a brief overview of work experience */
+.experience-table {
+  width: 95%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  text-overflow: wrap;
+}
+
+.experience-table th {
+  padding: 1em;
+  color: var(--brown);
+  font-weight: bold;
+}
+
+.experience-table td {
+  padding: 1em;
+}
+
+.experience-table tr:first-child th {
+  color: var(--pink);
+  font-size: 1.1em;
+  font-variant-caps: small-caps;
+}
+
+/*
+.experience-table tr:nth-child(odd) {
+  border: 5px solid var(--pink);
+  color: var(--brown);
+}
+
+.experience-table tr:nth-child(even) {
+  border: 5px solid var(--peach);
+  color: var(--brown);
+}
+  */
+
+/* ------------------------------ USED IN THE PREVIOUS WORKS PAGE ------------------------------ */
+
+/* for the skills boxes */
+.skills-box {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2rem auto;
+  flex-wrap: wrap; 
+}
+
+.skills {
+  flex: 1;
+  min-width: 250px;
+  padding: 1.5rem;
+  background: var(--white);
+  color: var(--brown);
+  border-radius: 15px;
+  border: 10px ridge #e9d3ed73;
+}
+
+.skills-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-box li {
+  text-align: center;
+  font-size: 0.88em;
+  line-height: 1.7;
+  margin-bottom: 1em;
+}
+
+/* for the full resume-looking tables */
+.works-table {
+  width: 95%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  text-overflow: wrap;
+}
+
+.works-table th {
+  padding: 1em;
+  color: var(--brown);
+  font-weight: bold;
+}
+
+.works-table td {
+  padding: 1em;
+}
+
+.works-table tr:nth-child(odd) {
+  background-color: var(--light-purple);
+  color: var(--brown);
+}
+
+.works-table tr:nth-child(even) {
+  /*background-color: var(--lightest-green);
+  border: 5px solid var(--purple);*/
+  color: var(--brown);
+}
+
+.works-table td:last-child,
+.works-table th:last-child {
+  width: 35%;
+}
+
+/* ------------------------------ USED IN THE PROJECTS PAGE ------------------------------ */
+
+/* for framing */
+.gallery-box {
+  padding: 2em 2em;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  width: 100%;
+  margin: 3rem auto;
+  background-color: var(--black);
+  color: (--white);
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.gallery-series {
+  max-height: 300px;
+  display: inline-flex;
+  border: 3px solid var(--yellow);
+}
+
+.gallery-fit {
+  max-height: 1000px;
+  max-width: 1000px;
+  display: inline-flex;
+  border: 3px solid var(--white);
+}
+
+
+/* ------------------------------ USED IN THE CONTACT PAGE ------------------------------ */
+
+/* styling the box containing the submit form & basic elements */
+.border {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-image: url("media/green-collage.png");
+  padding: 35px;
+  border-radius: 8px;
+}
+.box {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: var(--light-yellow);  
+  padding: 35px;
+  border-radius: 15px;
+  border: 5px double var(--green);
+}
+
+/* styling the elements in the form */
+.label {
+  font-family: 'Georgia', serif;
+  font-size: 1.3em;
+  color: var(--brown);
+  background-color: var(--purple);
+  overflow-wrap: break-word;
+}
+
+.box input,
+.box textarea,
+.box select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0 20px 0;
+  border-radius: 8px;
+  border: 2px solid var(--green);
+  background-color: var(--white);
+  box-sizing: border-box;
+}
+
+/* send button */
+.box button {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.box button:hover {
+  background-color: var(--pink);
+}

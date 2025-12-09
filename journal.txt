@@ -1,0 +1,106 @@
+Creating an HTML Professional Website Portfolio - Final Project Journal
+Elizabeth Moniz | CS 463 | 9 December 2025
+
+For this assignment, I wanted to incorporate my artistic side and highlight my career goals
+as an animator. I wanted to have styles that were warm and decorum rather than 
+corporate sleek, as I spend a lot of time at my day job aborbed in the blues and greys.
+
+SOURCES NOTE: It is implied that the class resources were used throughout the building
+of my website. This includes things like using the lab notebooks for image insertion, form
+building, etc. 
+Most of the sources I provided here are external, and these links are just the websites I had up and
+copied and pasted here as references.
+
+Shoutout to my Pinterest boards for providing all the photos used to style my website!
+
+All of the artworks featured in the Home Carousel and Projects tab are created by me. 
+
+WORKING THROUGH THE WEBSITE
+
+- THE FRONT PAGE -
+    - THE TITLE CARD -
+    To build the front page, I was used several references to our early HTML days.
+    This includes our first few projects in the lab notebook and resources from the 
+    opening weeks.
+
+    I started with the title and a body area to have tabs of information in the 
+    assignment requirement. The title is a different font to the rest of the page
+    to really sell a "title card" element moreso than text introducing the website.
+
+    To add to the title card idea, I put an image as the background and have it repeat its 
+    pattern to fit any screen dimension or zoom size. I enjoyed keeping my website to a 
+    yellow & purple theme because I felt their complimentary nature was an artistic way to 
+    spruce up the elements with color but preserving a sense of professionalism with tidiness. 
+
+    - THE HOME PAGE -
+    I wrote a small blurb to introduce myself and the contents of the site since it is the first
+    page to load. 
+    I also included a few photos to introduce my style to the viewer to preview my art. This was
+    also an opportunity to install a carousel element with bootstrap!
+    I have this all written in the .js file because I found having it in the shadow HTML prevented 
+    it from taking over all my pre-written styles. I only used one for this project.
+
+    Sources:
+        For development & styling: 
+            https://web.dev/learn/html/overview
+            https://web.dev/learn/html/headings-and-sections
+            https://web.dev/learn/html/text-basics
+        For organizing the code: https://web.dev/learn/html/semantic-html/
+        For using shadow DOM in the carousel:
+                https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM
+                https://web.dev/articles/shadowdom-v1
+        
+- THE MENU NAVIGATION BAR -
+    NAVBAR
+    In order for there to be pages on my website, I decided to use a navbar element to organize 
+    subsections into navigational tabs that only appear when clicked on. This allows there to be
+    separate pages that are accessible from the single HTML page, and it does not affect the 
+    fancy title card or submenu when navigating between pages.
+
+    I played with several styles before ultimately opting for round buttons on a plain background.
+    I found using images as the menu background or button style was distracting and a bit tacky. 
+
+        Sources: 
+            https://www.w3schools.com/css/css_navbar.asp
+            https://www.w3schools.com/css/css_navbar_horizontal.asp
+
+
+- THE OTHER TAB'S PAGES -
+    ABOUT Page
+    This page highlights my "work experience" (I'm manifesting) and some personal information.
+    There is a table to hold information about my totally real work experience, followed by a 
+    segment detailing my college experience. There is a small bit at the end that talks about
+    my personal interests and hobbies outside of work. 
+
+        Sources:
+            For the experience table: https://web.dev/learn/html/tables
+
+    PREVIOUS WORK Page
+    For this section, I basically copied information from my totally real resume and pasted them into
+    stylized tables, formatted differently but with the same logic as the blurb in About.
+    I decided to have a couple of flex boxes to list my skills and experience between both fields, computer
+    science and studio art. 
+
+    Info Note- these dates & projects are not accurate at all! I was 4 in 2004, not graduating
+    high school! Though, I did need a fun way to incorporate the elements of the website with practical
+    information. I had fun dreaming of a world I worked on Zootopia!
+    
+        Sources:
+            Mostly class and lab work for table creating and formatting
+        
+    PROJECTS Page
+    This page contains a list of my projects over the years. THIS section is all real- every piece of art was
+    done by me. All these projects are either personal works or assignments from college. 
+    I highlighted these with a fun little border box that is similar to formal mounting paper, or a style galleries
+    prefer to accentuate the art.
+    The pieces in series have a more strict boundary set to fit them all in a line, and the rest have their own styles
+    to simply be contained by the border boxes.
+        Sources:
+        Lab notebooks & Lectures for image importing and styling.
+
+    CONTACT Page
+    The contact page is a quick little form to have someone insert thier personal information and leave a message. It
+    requires the site visitor to include their name, email, and a message to be sent. The phone number field is optional.
+    
+        Sources:
+            For creating a contact form: https://web.dev/learn/html/forms
