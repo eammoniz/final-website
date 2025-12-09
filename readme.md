@@ -11,14 +11,15 @@ personal art created by me over the years. There are tabs to navigate between my
 organized resume, and an option to submit a form to contact me.
 
 ## Live Demo
-git@github.com:eammoniz/final-website.git
+https://eammoniz.github.io/final-website/
 
 ## Project Structure
-├── index.html
-|── final_website.css
-├── final_website.js
-├── media/
-    journal.txt
+index.html
+final_website.css
+final_website.js
+media/
+
+journal.txt
 
 ## Elements Used
 - HTML - general website structure
@@ -36,4 +37,5 @@ git@github.com:eammoniz/final-website.git
 
 ## Loading the Website
 1. Download or clone the repository
+
 2. Open "final_website.html" in your preferred browser.
