@@ -2,8 +2,10 @@
 
 ## Author
 Elizabeth Moniz
+
 Email: emoniz@pdx.edu
-GitHub: https://github.com/eammoniz/
+
+GitHub: https://github.com/eammoniz/final-website
 
 This website is a personal portfolio of my professional work "as an animator". I used HTML, CSS, and JavaScript to build it.
 Here, you can view my accomplishments as an animator in the field (with pretend roles and experiences listed), as well as
@@ -15,9 +17,14 @@ https://eammoniz.github.io/final-website/
 
 ## Project Structure
 index.html
+
 final_website.css
+
 final_website.js
+
 media/
+  .pngs & .jpgs
+
 
 journal.txt
 
@@ -38,4 +45,7 @@ journal.txt
 ## Loading the Website
 1. Download or clone the repository
 
-2. Open "final_website.html" in your preferred browser.
+2. Open "index.html" in your preferred browser.
+
+3. Enjoy!
+
