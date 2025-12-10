@@ -15,6 +15,9 @@ organized resume, and an option to submit a form to contact me.
 ## Live Demo
 https://eammoniz.github.io/final-website/
 
+## Link to my Presentation - Video Explaining & Touring the Website & Code
+https://drive.google.com/drive/folders/1yp1pqPKtGQjxpV6PUbSvLsuIQf0Ptg5O?usp=sharing
+
 ## Project Structure
 index.html
 
@@ -24,7 +27,6 @@ final_website.js
 
 media/
   .pngs & .jpgs
-
 
 journal.txt
 
@@ -48,4 +50,5 @@ journal.txt
 2. Open "index.html" in your preferred browser.
 
 3. Enjoy!
+
 
