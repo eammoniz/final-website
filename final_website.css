@@ -79,7 +79,6 @@ p {
   font-size: 1em;
   font-variant-caps: small-caps;
   margin-bottom: 1.5em;
-  line-height: 1.5;
 }
 
 .description {
@@ -87,6 +86,7 @@ p {
   font-size: 1em;
   font-weight: lighter;
   margin-bottom: 5em;
+  line-height: 1.5;
 }
 
 /* title card & various subtitles for font matching */
@@ -426,3 +426,4 @@ p {
   background-color: var(--pink);
 
 }
+
