@@ -79,6 +79,7 @@ p {
   font-size: 1em;
   font-variant-caps: small-caps;
   margin-bottom: 1.5em;
+  line-height: 1.5;
 }
 
 .description {
@@ -426,4 +427,5 @@ p {
   background-color: var(--pink);
 
 }
+
 
